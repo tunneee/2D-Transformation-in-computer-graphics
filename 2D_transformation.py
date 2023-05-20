@@ -208,10 +208,6 @@ def pick_points():
     pick_points_canvas.bind("<Button-1>", on_mouse_press_)
 
     def return_normal_state():
-        # pick_points_canvas.unbind('<Button-1>')
-        # pick_points_canvas.destroy()
-        # canvas.configure(state='normal')
-        # # canvas.grid(row=0, column=0, rowspan=15, columnspan=15)
         output_matrix_text.delete(1.0, tk.END)
         global canvas
         canvas = tk.Canvas(width=800, height=800, bg="grey")
